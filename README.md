@@ -1,8 +1,6 @@
-First public release of FM Arrow Tune for SDR#.
-
-This plugin allows convenient FM band browsing using the left and right arrow keys.
-
-It was originally built for remote listening via Splashtop on iPad, where the virtual arrow keys make band navigation especially comfortable.
+I built this while practicing SDR# plugin development.
+I often listen remotely on my iPad through Splashtop, and the virtual arrow keys turned out to be a really nice way to browse the FM band.
+So I decided to turn the idea into a small plugin and publish the first version.
 
 ## Features
 - Left / Right arrow tuning
