@@ -16,4 +16,4 @@ So I decided to turn the idea into a small plugin and publish the first version.
 
 ## Notes
 - Early release
-- More features may be added in future versions
+- More features may be added in future versions.
