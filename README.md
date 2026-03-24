@@ -1,7 +1,6 @@
 # FM Arrow Tune
 
 ![Release](https://img.shields.io/github/v/release/fmatic/FM-Arrow-Tune)
-![License](https://img.shields.io/github/license/fmatic/FM-Arrow-Tune)
 
 SDR# plugin for convenient FM band browsing using arrow keys.
 
