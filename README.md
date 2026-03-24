@@ -39,6 +39,6 @@ I often use SDR# remotely from my iPad through Splashtop. Since Splashtop provid
 Current release: v0.1.0
 
 This is the first public version. More features may follow, such as:
-	- Up / Down band jumps
-	- Hold-to-scan
-	- Faster navigation options
+- Up / Down band jumps
+- Hold-to-scan
+- Faster navigation options
