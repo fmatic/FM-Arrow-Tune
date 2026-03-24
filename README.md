@@ -4,6 +4,10 @@
 
 SDR# plugin for convenient FM band browsing using arrow keys.
 
+## Screenshot
+
+![FM Arrow Tune](docs/screenshot.png)
+
 I built this while practicing SDR# plugin development.
 I often listen remotely on my iPad through Splashtop, and the virtual arrow keys turned out to be a really nice way to browse the FM band.
 So I decided to turn the idea into a small plugin and publish the first version.
