@@ -34,3 +34,12 @@ I often use SDR# remotely from my iPad through Splashtop. Since Splashtop provid
 3. Copy `SDRSharp.Plugin.FmArrowTune.dll` to your SDR# plugins folder.
 4. Add the plugin entry to `Plugins.xml`.
 5. Start SDR#
+
+## Status
+
+Current release: v0.1.0
+
+This is the first public version. More features may follow, such as:
+	- Up / Down band jumps
+	- Hold-to-scan
+	- Faster navigation options
