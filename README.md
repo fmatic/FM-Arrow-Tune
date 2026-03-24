@@ -20,3 +20,12 @@ So I decided to turn the idea into a small plugin and publish the first version.
 ## Notes
 - Early release
 - More features may be added in future versions.
+
+## Installation
+
+1. Download the latest release from the Releases page.
+2. Extract the ZIP archive.
+3. Copy `SDRSharp.Plugin.FmArrowTune` folder to the SDR# `Plugins` folder.
+4. Restart SDR#.
+
+The plugin will be loaded automatically.
