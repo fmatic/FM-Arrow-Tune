@@ -8,24 +8,33 @@ SDR# plugin for convenient FM band browsing using arrow keys.
 
 ![FM Arrow Tune](docs/screenshot.png)
 
-I built this while practicing SDR# plugin development.
-I often listen remotely on my iPad through Splashtop, and the virtual arrow keys turned out to be a really nice way to browse the FM band.
-So I decided to turn the idea into a small plugin and publish the first version.
+# FM Arrow Tune
+
+FM Arrow Tune is an SDR# plugin for convenient FM band browsing with keyboard arrow keys.
+
+It was originally built for remote listening via Splashtop on iPad, where the virtual arrow keys make tuning especially comfortable.
 
 ## Features
-- Left / Right arrow tuning
-- FM-friendly step tuning
-- Designed for smooth band browsing
 
-## Notes
-- Early release
-- More features may be added in future versions.
+- Left / Right arrow tuning
+- Adjustable step size
+- Optional WFM-only mode
+- Optional FM band clamp (87.5–108.0 MHz)
+- Optional wrap-around tuning
+- Optional Ctrl + Arrow requirement
+
+## Why this plugin?
+
+I often use SDR# remotely from my iPad through Splashtop. Since Splashtop provides virtual arrow keys, I wanted a simple and comfortable way to browse the FM band by tapping left and right.
 
 ## Installation
 
 1. Download the latest release from the Releases page.
 2. Extract the ZIP archive.
-3. Copy `SDRSharp.Plugin.FmArrowTune` folder to the SDR# `Plugins` folder.
-4. Restart SDR#.
+3. Copy `SDRSharp.Plugin.FmArrowTune.dll` to your SDR# plugins folder.
+4. Add the plugin entry to `Plugins.xml`.
 
-The plugin will be loaded automatically.
+Example:
+
+```xml
+<add key="FmArrowTune" value="SDRSharp.FmArrowTune.FmArrowTunePlugin, SDRSharp.Plugin.FmArrowTune" />
