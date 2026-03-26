@@ -22,6 +22,7 @@ It was originally built for remote listening via Splashtop on iPad, where the vi
 - Optional FM band clamp (87.5–108.0 MHz)
 - Optional wrap-around tuning
 - Optional Ctrl + Arrow requirement
+- Up/Down band jumps
 
 ## Why this plugin?
 
@@ -39,6 +40,8 @@ I often use SDR# remotely from my iPad through Splashtop. Since Splashtop provid
 Current release: **v0.2.0**
 - Added Up/Down band jumps
 - Improved band navigation workflow
+
+
 
 v0.1.0
 
