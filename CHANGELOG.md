@@ -1,5 +1,15 @@
 # Changelog
 
+## [0.2.0] - 2026-03-26
+
+### Added
+- Up / Down arrow band jumps
+- Configurable jump size
+- Internal groundwork for multi-band support
+
+### Improved
+- Faster band navigation using combined step + jump tuning
+
 ## [0.1.0] - 2026-03-23
 
 ### Added
