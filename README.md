@@ -42,3 +42,30 @@ This is the first public version. More features may follow, such as:
 - Up / Down band jumps
 - Hold-to-scan
 - Faster navigation options
+
+
+## Roadmap
+
+### v0.2.0
+- Up / Down arrow band jumps (configurable)
+- Preparation for multi-band support
+
+### v0.3.0
+- Hold-to-scan (press and hold Left/Right)
+- Adjustable scan speed
+
+### v0.4.0
+- Scan + logging
+- Save scan results to TXT (frequency, PI, station)
+
+### v0.5.0
+- Multi-band support (AM, FM, VHF/UHF, LPD)
+- Band-aware step sizes
+
+### v0.6.0
+- Advanced logging and grouping
+- Station grouping by PI code (multi-frequency detection)
+
+### v1.0.0
+- Stable, full-featured release
+- Polished UI and configuration
