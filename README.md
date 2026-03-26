@@ -43,9 +43,7 @@ Current release: **v0.2.0**
 
 
 
-v0.1.0
-
-This is the first public version. More features may follow, such as:
+v0.1.0 This is the first public version. More features may follow, such as:
 - Up / Down band jumps
 - Hold-to-scan
 - Faster navigation options
