@@ -51,9 +51,9 @@ v0.1.0 This is the first public version. More features may follow, such as:
 
 ## Roadmap
 
-### v0.2.0
-- Up / Down arrow band jumps (configurable)
-- Preparation for multi-band support
+### v0.2.0 (Released)
+- [x] Up / Down arrow band jumps (configurable)
+- [x] Preparation for multi-band support
 
 ### v0.3.0
 - Hold-to-scan (press and hold Left/Right)
