@@ -24,6 +24,10 @@ It was originally built for remote listening via Splashtop on iPad, where the vi
 - Optional Ctrl + Arrow requirement
 - Up/Down band jumps
 
+## Tip
+
+Holding down the arrow keys will rapidly step through the band, allowing quick scanning-like behavior.
+
 ## Why this plugin?
 
 I often use SDR# remotely from my iPad through Splashtop. Since Splashtop provides virtual arrow keys, I wanted a simple and comfortable way to browse the FM band by tapping left and right.
