@@ -51,6 +51,10 @@ v0.1.0 This is the first public version. More features may follow, such as:
 
 ## Roadmap
 
+## Roadmap
+
+This project is actively evolving. Planned features are listed below.
+
 ### v0.2.0 (Released)
 - [x] Up / Down arrow band jumps (configurable)
 - [x] Preparation for multi-band support
