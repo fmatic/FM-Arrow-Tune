@@ -17,12 +17,13 @@ It was originally built for remote listening via Splashtop on iPad, where the vi
 ## Features
 
 - Left / Right arrow tuning
+- Up / Down band jumps
 - Adjustable step size
 - Optional WFM-only mode
 - Optional FM band clamp (87.5–108.0 MHz)
 - Optional wrap-around tuning
 - Optional Ctrl + Arrow requirement
-- Up/Down band jumps
+
 
 ## Tip
 
@@ -53,7 +54,6 @@ v0.1.0 This is the first public version. More features may follow, such as:
 - Faster navigation options
 
 
-## Roadmap
 
 ## Roadmap
 
