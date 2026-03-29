@@ -46,11 +46,11 @@ Current release: **v0.3.0**
 - Adjustable scan speed (ms)
 - Improved tuning responsiveness
 
+
+
 v0.2.0
 - Added Up/Down band jumps
 - Improved band navigation workflow
-
-
 
 v0.1.0 This is the first public version. More features may follow, such as:
 - Up / Down band jumps
@@ -67,7 +67,7 @@ This project is actively evolving. Planned features are listed below.
 - [x] Up / Down arrow band jumps (configurable)
 - [x] Preparation for multi-band support
 
-### v0.3.0
+### v0.3.0 (Released)
 - [x] Hold-to-scan (press and hold Left/Right)
 - [x] Adjustable scan speed
 
