@@ -16,18 +16,17 @@ It was originally built for remote listening via Splashtop on iPad, where the vi
 
 ## Features
 
-- Left / Right arrow tuning
+- Left / Right arrow tuning (step)
 - Up / Down band jumps
-- Adjustable step size
+- Adjustable step and jump sizes
 - Optional WFM-only mode
-- Optional FM band clamp (87.5–108.0 MHz)
-- Optional wrap-around tuning
+- Band clamp and wrap-around
 - Optional Ctrl + Arrow requirement
 
 
 ## Tip
 
-Holding down the arrow keys will rapidly step through the band, allowing quick scanning-like behavior.
+Hold arrow keys to scan through the band. Adjust scan speed in the plugin settings.
 
 ## Why this plugin?
 
@@ -42,7 +41,12 @@ I often use SDR# remotely from my iPad through Splashtop. Since Splashtop provid
 
 ## Status
 
-Current release: **v0.2.0**
+Current release: **v0.3.0**
+- Hold-to-scan (press and hold arrow keys)
+- Adjustable scan speed (ms)
+- Improved tuning responsiveness
+
+v0.2.0
 - Added Up/Down band jumps
 - Improved band navigation workflow
 
@@ -64,8 +68,8 @@ This project is actively evolving. Planned features are listed below.
 - [x] Preparation for multi-band support
 
 ### v0.3.0
-- Hold-to-scan (press and hold Left/Right)
-- Adjustable scan speed
+- [x] Hold-to-scan (press and hold Left/Right)
+- [x] Adjustable scan speed
 
 ### v0.4.0
 - Scan + logging
