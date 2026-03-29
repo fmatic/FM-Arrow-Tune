@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.3.0] - 2026-03-28
+
+### Added
+
+- Hold-to-scan (press and hold arrow keys)
+- Adjustable scan speed (ms)
+- Improved tuning responsiveness
+
 ## [0.2.0] - 2026-03-26
 
 ### Added
