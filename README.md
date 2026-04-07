@@ -1,28 +1,29 @@
-# FM Arrow Tune
+# FM Arrow Tune (DX Data Tool)
 
 ![Release](https://img.shields.io/github/v/release/fmatic/FM-Arrow-Tune)
 
-SDR# plugin for convenient FM band browsing using arrow keys.
+SDR# plugin for FM DX logging, signal analysis and real-time monitoring with dashboard support.
 
 ## Screenshot
 
 ![FM Arrow Tune](docs/screenshot.png)
 
-# FM Arrow Tune
+FM Arrow Tune has evolved into a full DX Data Tool for SDR#.
 
-FM Arrow Tune is an SDR# plugin for convenient FM band browsing with keyboard arrow keys.
-
-It was originally built for remote listening via Splashtop on iPad, where the virtual arrow keys make tuning especially comfortable.
+Originally built for fast keyboard tuning, it now provides:
 
 ## Features
 
-- Left / Right arrow tuning (step)
-- Up / Down band jumps
-- Adjustable step and jump sizes
-- Optional WFM-only mode
-- Band clamp and wrap-around
-- Optional Ctrl + Arrow requirement
+- PI-first logging (even before PS/RDS completes)
+- Radiotext capture (optional)
+- Signal metrics (SNR, Peak, Noise Floor)
+- Stereo / Mono detection
+- Smart auto-scan with pause/stop logic
+- CSV + JSON logging
+- Daily log folders
+- Live dashboard (local or hosted)
 
+This is not just a tuning plugin anymore — it's a DX monitoring system. 
 
 ## Tip
 
@@ -31,6 +32,8 @@ Hold arrow keys to scan through the band. Adjust scan speed in the plugin settin
 ## Why this plugin?
 
 I often use SDR# remotely from my iPad through Splashtop. Since Splashtop provides virtual arrow keys, I wanted a simple and comfortable way to browse the FM band by tapping left and right.
+
+Never stop the madness!
 
 ## Installation
 
