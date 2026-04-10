@@ -4,6 +4,16 @@ All notable changes to this project will be documented in this file.
 
 ---
 
+### [0.5.1] - 2026-04-10
+
+#### Fixed
+- Prevented frequency/PI mismatch during scanning
+- Improved logging stability when switching frequencies
+- Added frequency stability validation before committing log entries
+
+#### Improved
+- More reliable DX logging during fast scan conditions
+
 ## [0.5.0] - 2026-04-10
 
 ### 🚀 Added
