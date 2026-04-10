@@ -119,9 +119,9 @@ Lookup priority (Auto mode)
 ⸻
 
 ⚙️ Recommended Defaults
-	•	Scan speed: 120 ms
-	•	Auto dwell: 1200 ms
-	•	Station settle time: 1000 ms
+ - Scan speed: 120 ms
+ - Auto dwell: 1200 ms
+ - Station settle time: 1000 ms
 
 ⸻
 
