@@ -10,9 +10,6 @@ SDR# plugin for FM DX logging, signal analysis and real-time monitoring — now 
 
 ![FM Arrow Tune Dashboard](docs/dashboard.png)
 
-> 💡 Lisää kuva repoosi polkuun: `docs/dashboard.png`  
-> (voit käyttää sitä viimeisintä screenshotia minkä lähetit — se on täydellinen tähän)
-
 ---
 
 ## 🚀 Features
@@ -104,11 +101,13 @@ Users can manually download CSV files from FMScan:
 
 Place them here:
 
+``` text
 live/
   fmscan/
     fmscan-tropo.csv
     fmscan-es.csv
     fmscan-ms.csv
+```
 
 Lookup priority (Auto mode)
 	1.	Tropo
