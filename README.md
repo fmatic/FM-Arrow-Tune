@@ -2,90 +2,130 @@
 
 ![Release](https://img.shields.io/github/v/release/fmatic/FM-Arrow-Tune)
 
-SDR# plugin for FM DX logging, signal analysis and real-time monitoring with dashboard support.
+FM Arrow Tune (DX Data Tool)
 
-## Screenshot
+SDR# plugin for FM DX logging, signal analysis and real-time monitoring — now with optional live dashboard support.
 
-![FM Arrow Tune](docs/screenshot.png)
+Screenshot
 
-FM Arrow Tune has evolved into a full DX Data Tool for SDR#.
+FM Arrow Tune has evolved from a keyboard tuning helper into a full DX Data Tool for SDR#.
 
 Originally built for fast keyboard tuning, it now provides:
 
-## Features
+Features
+	•	keyboard-driven FM tuning and scanning
+	•	hold-to-scan and auto scan
+	•	PI-first logging
+	•	optional Radiotext capture
+	•	signal metrics:
+	•	SNR
+	•	Peak
+	•	Noise Floor
+	•	Stereo / Mono
+	•	TXT / CSV / JSON logging
+	•	daily log folders
+	•	invalid PI filtering
+	•	station settle time to reduce false early RDS logging
+	•	optional live dashboard
+	•	optional FMScan / FMLIST enrichment
+	•	confidence score and DX event detection
 
-- PI-first logging (even before PS/RDS completes)
-- Radiotext capture (optional)
-- Signal metrics (SNR, Peak, Noise Floor)
-- Stereo / Mono detection
-- Smart auto-scan with pause/stop logic
-- CSV + JSON logging
-- Daily log folders
-- Live dashboard (local or hosted)
+This is not just a tuning plugin anymore — it is a compact DX monitoring system.
 
-This is not just a tuning plugin anymore — it's a DX monitoring system. 
+Quick Start
+	1.	Download the latest release
+	2.	Extract the ZIP archive
+	3.	Copy SDRSharp.Plugin.FmArrowTune into your SDR# plugins folder
+	4.	Start SDR#
+	5.	Enable FM Arrow Tune
 
-## Tip
+Optional:
+	6.	Place dashboard.html into your live log folder to use the dashboard
 
-Hold arrow keys to scan through the band. Adjust scan speed in the plugin settings.
+Keyboard Shortcuts
+	•	Left / Right = step tuning
+	•	Up / Down = jump tuning
+	•	Hold arrow = continuous scan
+	•	F8 = auto scan up
+	•	F7 = auto scan down
+	•	Esc = stop scanning
 
-## Why this plugin?
+Dashboard (optional)
+
+Starting with v0.5.0, FM Arrow Tune includes support for a live dashboard.
+
+The dashboard can show:
+	•	Last Station
+	•	daily logs
+	•	unique PI list
+	•	Best DX today
+	•	Top stations
+	•	confidence score
+	•	DX event banner
+	•	optional FMScan enrichment
+
+The dashboard is fully optional.
+The plugin works normally without it.
+
+Example folder structure
+
+live/
+  dashboard.html
+  FMArrowTune_latest.json
+  index.json
+  2026-04-10/
+    FMArrowTune.json
+
+FMScan / FMLIST support (optional)
+
+FMScan/FMLIST CSV support is optional and user-controlled.
+
+No station database is bundled.
+No automatic download is included.
+
+Users can manually place supported CSV files here:
+
+live/
+  fmscan/
+    fmscan-tropo.csv
+    fmscan-es.csv
+    fmscan-ms.csv
+
+Auto mode lookup priority:
+	1.	Tropo
+	2.	Sporadic E
+	3.	Meteor Scatter
+
+FMScan data is used as enrichment only, not as absolute truth.
+
+Recommended defaults
+	•	Scan speed: 120 ms
+	•	Auto dwell: 1200 ms
+	•	Station settle time: 1000 ms
+
+Why this plugin?
 
 I often use SDR# remotely from my iPad through Splashtop. Since Splashtop provides virtual arrow keys, I wanted a simple and comfortable way to browse the FM band by tapping left and right.
 
+Over time, the project grew into a more complete DX workflow:
+scan → detect → log → analyze.
+
 Never stop the madness!
 
-## Installation
+Status
 
-1. Download the latest release from the Releases page.
-2. Extract the ZIP archive.
-3. Copy `SDRSharp.Plugin.FmArrowTune` folder to your SDR# plugins folder.
-4. Start SDR#
+Current release: v0.5.0
 
-## Status
+Highlights in v0.5.0
+	•	new optional live dashboard
+	•	signal metrics logging
+	•	station settle time
+	•	improved invalid PI filtering
+	•	confidence score
+	•	DX event detection
+	•	optional FMScan / FMLIST enrichment
 
-Current release: **v0.3.0**
-- Hold-to-scan (press and hold arrow keys)
-- Adjustable scan speed (ms)
-- Improved tuning responsiveness
+License
 
-
-
-v0.2.0
-- Added Up/Down band jumps
-- Improved band navigation workflow
-
-v0.1.0 This is the first public version. More features may follow, such as:
-- Up / Down band jumps
-- Hold-to-scan
-- Faster navigation options
-
-
-
-## Roadmap
-
-This project is actively evolving. Planned features are listed below.
-
-### v0.2.0 (Released)
-- [x] Up / Down arrow band jumps (configurable)
-- [x] Preparation for multi-band support
-
-### v0.3.0 (Released)
-- [x] Hold-to-scan (press and hold Left/Right)
-- [x] Adjustable scan speed
-
-### v0.4.0
-- Scan + logging
-- Save scan results to TXT (frequency, PI, station)
-
-### v0.5.0
-- Multi-band support (AM, FM, VHF/UHF, LPD)
-- Band-aware step sizes
-
-### v0.6.0
-- Advanced logging and grouping
-- Station grouping by PI code (multi-frequency detection)
-
-### v1.0.0
-- Stable, full-featured release
-- Polished UI and configuration
+MIT
+:::
