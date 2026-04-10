@@ -4,6 +4,22 @@ All notable changes to this project will be documented in this file.
 
 ---
 
+## [0.5.1] - 2026-04-10
+
+### 🛠 Fixed
+- Fixed frequency offset logging issue where stations were logged at incorrect frequencies (+0.1 MHz)
+- Fixed delayed logging behavior caused by pending queue committing after frequency change
+- Ensured station is logged BEFORE frequency step during scan
+
+### ⚡ Improved
+- Logging accuracy significantly improved during fast scanning
+- Pending queue now works reliably without mixing station/frequency data
+- More deterministic DX logging behavior
+
+### 🧪 Notes
+- This is a hotfix release for 0.5.0
+- Recommended update for all users using auto scan or keyboard tuning
+
 ### [0.5.1] - 2026-04-10
 
 #### Fixed
