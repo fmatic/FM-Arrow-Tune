@@ -1,30 +1,90 @@
 # Changelog
 
-## [0.3.0] - 2026-03-28
+All notable changes to this project will be documented in this file.
+
+---
+
+## [0.5.0] - 2026-04-10
+
+### 🚀 Added
+
+- Live dashboard support (optional)
+  - real-time log viewer
+  - last station panel
+  - unique PI listing
+  - best DX / top stations views
+- Confidence score system
+  - PI, PS, RT and SNR based scoring
+  - classification: high / medium / low confidence
+- DX event detection
+  - highlights new or strong DX events
+- FMScan / FMLIST CSV lookup (optional)
+  - manual user-provided data only
+  - propagation modes: Tropo / Sporadic E / Meteor Scatter
+  - auto mode fallback order: Tropo → ES → MS
+- Station settle time (pre-log validation)
+  - prevents false early RDS detections
+- Extended logging data
+  - SNR
+  - Peak level
+  - Noise floor
+  - Stereo / Mono
+
+---
+
+### 🔧 Improved
+
+- Logging reliability significantly improved
+  - reduced false PI entries
+  - better RDS stabilization handling
+- UI clarity in plugin panel
+  - improved labels and descriptions
+  - added help box with shortcuts
+- Dashboard rendering and layout
+  - responsive grid
+  - improved readability for long RT text
+- FMScan matching logic
+  - suppression of invalid / suspicious PI codes
+  - smarter matching prioritization
+
+---
+
+### 🛠 Fixed
+
+- early incorrect PI logging (e.g. 0001 / 0100 cases)
+- dashboard rendering issues on certain layouts
+- numeric control alignment glitches in plugin UI
+- scan control inconsistencies
+
+---
+
+### ⚠️ Notes
+
+- Dashboard is fully optional and not required for plugin operation
+- FMScan data is not bundled due to licensing restrictions
+- Users must download FMScan CSV files manually
+- FMScan data is used for enrichment only, not as authoritative source
+
+---
+
+## [0.4.0]
 
 ### Added
+- Initial logging system
+- PI-based logging
+- basic auto scan
 
-- Hold-to-scan (press and hold arrow keys)
-- Adjustable scan speed (ms)
-- Improved tuning responsiveness
+---
 
-## [0.2.0] - 2026-03-26
-
-### Added
-- Up / Down arrow band jumps
-- Configurable jump size
-- Internal groundwork for multi-band support
-
-### Improved
-- Faster band navigation using combined step + jump tuning
-
-## [0.1.0] - 2026-03-23
+## [0.3.0]
 
 ### Added
-- Initial public release
-- Left / Right arrow FM tuning
-- Adjustable step size
-- Optional WFM-only mode
-- FM band clamp (87.5–108.0 MHz)
-- Wrap-around tuning
-- Optional Ctrl + Arrow requirement
+- Arrow key tuning
+- basic plugin functionality
+
+---
+
+## [0.1.0]
+
+### Initial release
+- Simple keyboard tuning helper
