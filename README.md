@@ -141,7 +141,18 @@ scan → detect → validate → log → analyze
 
 📦 Release
 
-Current version: v0.5.0
+🆕 v0.5.1 – Logging stability fix
+
+This update improves DX logging accuracy during scanning.
+	•	Fixed frequency / PI mismatch issue
+	•	Prevented RDS carry-over between frequencies
+	•	Added frequency stability validation before logging
+
+➡️ Result: cleaner logs and more reliable DX data
+
+---
+
+Version: v0.5.0
 
 Highlights
 - 🔥 Live dashboard
