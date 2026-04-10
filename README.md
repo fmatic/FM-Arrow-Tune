@@ -2,8 +2,6 @@
 
 ![Release](https://img.shields.io/github/v/release/fmatic/FM-Arrow-Tune)
 
-# FM Arrow Tune (DX Data Tool)
-
 SDR# plugin for FM DX logging, signal analysis and real-time monitoring — now with optional live dashboard support.
 
 ---
