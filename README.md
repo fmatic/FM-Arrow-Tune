@@ -10,7 +10,13 @@ SDR# plugin for FM DX logging, signal analysis and real-time monitoring — now 
 
 ![FM Arrow Tune Dashboard](docs/screenshot.png)
 
----
+-
+
+🌐 **Live Demo**  
+Experience the dashboard in action:  
+👉 https://vadelma.online/live/dashboard.html
+
+> ⚠️ Live demo uses real-time data — content may change continuously.
 
 ## 🚀 Features
 
