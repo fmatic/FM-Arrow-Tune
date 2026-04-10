@@ -8,7 +8,7 @@ SDR# plugin for FM DX logging, signal analysis and real-time monitoring — now 
 
 ## 📸 Screenshot
 
-![FM Arrow Tune Dashboard](docs/dashboard.png)
+![FM Arrow Tune Dashboard](docs/screenshot.png)
 
 ---
 
