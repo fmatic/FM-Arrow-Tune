@@ -110,9 +110,9 @@ live/
 ```
 
 Lookup priority (Auto mode)
-	1.	Tropo
-	2.	Sporadic E
-	3.	Meteor Scatter
+- Tropo
+- Sporadic E
+- Meteor Scatter
 
 👉 FMScan data is used as enrichment only, not as absolute truth.
 
