@@ -139,12 +139,12 @@ scan → detect → validate → log → analyze
 Current version: v0.5.0
 
 Highlights
-	•	🔥 Live dashboard
-	•	📊 Signal metrics logging
-	•	⏱️ Station settle time
-	•	🧠 Confidence scoring
-	•	📡 DX event detection
-	•	🌍 FMScan enrichment (optional)
+- 🔥 Live dashboard
+- 📊 Signal metrics logging
+- ⏱️ Station settle time
+- 🧠 Confidence scoring
+- 📡 DX event detection
+- 🌍 FMScan enrichment (optional)
 
 ⸻
 
