@@ -4,7 +4,7 @@ All notable changes to this project will be documented in this file.
 
 ---
 
-## [0.5.1] - 2026-04-10
+## [0.5.1] - 2026-04-10 - HotFix
 
 ### 🛠 Fixed
 - Fixed frequency offset logging issue where stations were logged at incorrect frequencies (+0.1 MHz)
