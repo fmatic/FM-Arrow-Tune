@@ -4,6 +4,22 @@ All notable changes to this project will be documented in this file.
 
 ---
 
+[0.5.2] - 2026-04-11
+
+### Added
+- Optional `dashboard-config.json` for user location
+- Support for user-defined coordinates in dashboard
+- Nearest TX selection for FMScan matches sharing the same PI code
+
+### Improved
+- Dashboard now prefers the closest transmitter when location is configured
+- Better handling of multi-transmitter network stations
+- More accurate and user-friendly FMScan station display
+
+### Notes
+- Dashboard location config is optional
+- If no location config is present, dashboard falls back to the first FMScan match
+
 ## [0.5.1] - 2026-04-10 - HotFix
 
 ### 🛠 Fixed
