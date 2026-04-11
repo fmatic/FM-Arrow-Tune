@@ -121,6 +121,35 @@ Lookup priority (Auto mode)
 
 👉 FMScan data is used as enrichment only, not as absolute truth.
 
+## Optional dashboard location config
+
+The dashboard can optionally use a small JSON config file to improve FMScan matching.
+When multiple FMScan entries share the same PI code, the dashboard can prefer the **nearest transmitter** based on user-defined coordinates.
+If no config file is present, the dashboard falls back to the first available FMScan match.
+
+### File
+Create this file next to `dashboard.html`:
+
+```text
+dashboard-config.json
+
+{
+  "userLocation": {
+    "name": "Jyväskylä",
+    "lat": 62.2426,
+    "lon": 25.7473
+  }
+}
+```
+
+Behavior
+	•	If coordinates are configured:
+	•	dashboard selects the nearest matching TX site
+	•	If no coordinates are configured:
+	•	dashboard uses the default FMScan fallback match
+
+This is especially useful for stations and networks where the same PI code is used by multiple transmitters.
+
 ⸻
 
 ⚙️ Recommended Defaults
@@ -144,17 +173,20 @@ scan → detect → validate → log → analyze
 
 🆕 0.5.2 - 2026-04-11
 
-### Added
+Added
+
 - Optional `dashboard-config.json` for user location
 - Support for user-defined coordinates in dashboard
 - Nearest TX selection for FMScan matches sharing the same PI code
 
-### Improved
+Improved
+
 - Dashboard now prefers the closest transmitter when location is configured
 - Better handling of multi-transmitter network stations
 - More accurate and user-friendly FMScan station display
 
-### Notes
+Notes
+
 - Dashboard location config is optional
 - If no location config is present, dashboard falls back to the first FMScan match
 
