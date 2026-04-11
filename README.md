@@ -52,6 +52,7 @@ Experience the dashboard in action:
 Optional:
 
 6. Open `dashboard.html` to view logs visually
+7. Dashboard requires HTTP server
 
 ---
 
