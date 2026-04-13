@@ -171,6 +171,12 @@ scan → detect → validate → log → analyze
 
 📦 Release
 
+🚀 Version 0.5.3 highlights
+	•	Adjacent channel detection
+	•	Improved logging accuracy
+	•	Confidence scoring system
+	•	Standalone dashboard mode
+
 
 🆕 0.5.2 - 2026-04-11
 
