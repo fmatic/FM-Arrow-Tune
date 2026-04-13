@@ -32,10 +32,21 @@ Experience the dashboard in action:
 - daily log folders
 - invalid PI filtering
 - station settle time (prevents early false RDS logging)
+
+### 🧠 Intelligent detection
+- adjacent-channel duplicate detection (±0.1 MHz)
+- quality-based station selection (PI / PS / RT / SNR)
+- pending + settle logging system
+- force-log before frequency change
+
+### 🌐 Dashboard
 - optional live dashboard
 - optional FMScan / FMLIST enrichment
 - confidence score
 - DX event detection
+- improved loading performance (lazy FMScan loading)
+
+👉 This is no longer just a tuning helper — it's a compact DX analysis tool.
 
 👉 This is no longer just a tuning helper — it's a compact DX analysis tool.
 
@@ -169,55 +180,76 @@ scan → detect → validate → log → analyze
 
 ⸻
 
-📦 Release
+---
 
-🚀 Version 0.5.3 highlights
-	•	Adjacent channel detection
-	•	Improved logging accuracy
-	•	Confidence scoring system
-	•	Standalone dashboard mode
+## 📦 Release
 
+🚀 Version 0.5.4 highlights
 
-🆕 0.5.2 - 2026-04-11
+### 🧠 Core improvements
+- Adjacent-channel duplicate detection moved fully to plugin
+- Quality-based station selection (PI / PS / RT / SNR)
+- More accurate logging during fast scanning
 
-Added
+### 📊 Logging upgrades
+- New JSON fields:
+  - `adjacentDuplicate`
+  - `adjacentReason`
+- Improved signal metrics logging
+- Stable pending + settle logic
 
+### ⚙️ Refactoring
+- Settings moved to dedicated `FmArrowTuneSettings`
+- Cleaner separation of logic, UI and logging
+
+### 🌐 Dashboard improvements
+- Faster loading (lazy FMScan loading)
+- Improved station matching
+- Better confidence scoring
+- Frequency mismatch detection improvements
+
+---
+
+🆕 v0.5.3 – Previous release
+
+- Adjacent channel detection (initial version)
+- Improved logging accuracy
+- Confidence scoring system
+- Standalone dashboard mode
+
+---
+
+🆕 v0.5.2 - 2026-04-11
+
+### Added
 - Optional `dashboard-config.json` for user location
 - Support for user-defined coordinates in dashboard
 - Nearest TX selection for FMScan matches sharing the same PI code
 
-Improved
+### Improved
+- Better handling of multi-transmitter stations
+- More accurate FMScan display
 
-- Dashboard now prefers the closest transmitter when location is configured
-- Better handling of multi-transmitter network stations
-- More accurate and user-friendly FMScan station display
-
-Notes
-
-- Dashboard location config is optional
-- If no location config is present, dashboard falls back to the first FMScan match
+---
 
 🆕 v0.5.1 – Logging stability fix
 
-This update improves DX logging accuracy during scanning.
-	•	Fixed frequency / PI mismatch issue
-	•	Prevented RDS carry-over between frequencies
-	•	Added frequency stability validation before logging
+- Fixed frequency / PI mismatch issue
+- Prevented RDS carry-over between frequencies
+- Added frequency stability validation
 
 ➡️ Result: cleaner logs and more reliable DX data
 
 ---
 
-Version: v0.5.0
+🆕 v0.5.0 – Major update
 
-Highlights
 - 🔥 Live dashboard
 - 📊 Signal metrics logging
 - ⏱️ Station settle time
 - 🧠 Confidence scoring
 - 📡 DX event detection
 - 🌍 FMScan enrichment (optional)
-
 ⸻
 
 📜 License
