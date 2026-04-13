@@ -8,26 +8,24 @@ All notable changes to this project will be documented in this file.
 
 Highlights
 
-• Improved station logging
-• Smarter PI/PS/RT stabilization before logging
-• Better duplicate filtering
-• Cleaner log output overall
+- Improved station logging
+- Smarter PI/PS/RT stabilization before logging
+- Better duplicate filtering
+- Cleaner log output overall
+- Adjacent channel detection
+- Detects 100 kHz offset duplicates
+- Marks them with ADJ
+- Keeps correct frequency as primary
+- Dashboard upgrades
+- New confidence scoring system
+- DX event detection
+-  Improved FMScan lookup logic
+-  Better UI clarity and station grouping
 
-• Adjacent channel detection
-• Detects 100 kHz offset duplicates
-• Marks them with ADJ
-• Keeps correct frequency as primary
-
-• Dashboard upgrades
-• New confidence scoring system
-• DX event detection
-• Improved FMScan lookup logic
-• Better UI clarity and station grouping
-
-• Standalone dashboard (NEW)
-• Works without Python or server
-• Load JSON + CSV files manually
-• Perfect for tablets and lightweight setups
+- Standalone dashboard (NEW)
+- Works without Python or server
+- Load JSON + CSV files manually
+- Perfect for tablets and lightweight setups
 
 Dashboard modes
 
