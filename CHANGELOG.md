@@ -27,15 +27,15 @@ Highlights
 - Load JSON + CSV files manually
 - Perfect for tablets and lightweight setups
 
-Dashboard modes
+Dashboard modes:
 
-Server mode
+1. Server mode
 
 python -m http.server 8000
 
-Standalone mode
-• Open dashboard.html
-• Load log files manually
+2. Standalone mode
+- Open dashboard.html
+- Load log files manually
 
 [0.5.2] - 2026-04-11
 
