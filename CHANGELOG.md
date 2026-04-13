@@ -4,6 +4,41 @@ All notable changes to this project will be documented in this file.
 
 ---
 
+[0.5.4] - 2026-04-13
+
+Highlights
+
+• Improved station logging
+• Smarter PI/PS/RT stabilization before logging
+• Better duplicate filtering
+• Cleaner log output overall
+
+• Adjacent channel detection
+• Detects 100 kHz offset duplicates
+• Marks them with ADJ
+• Keeps correct frequency as primary
+
+• Dashboard upgrades
+• New confidence scoring system
+• DX event detection
+• Improved FMScan lookup logic
+• Better UI clarity and station grouping
+
+• Standalone dashboard (NEW)
+• Works without Python or server
+• Load JSON + CSV files manually
+• Perfect for tablets and lightweight setups
+
+Dashboard modes
+
+Server mode
+
+python -m http.server 8000
+
+Standalone mode
+• Open dashboard.html
+• Load log files manually
+
 [0.5.2] - 2026-04-11
 
 ### Added
