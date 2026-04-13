@@ -4,7 +4,7 @@ All notable changes to this project will be documented in this file.
 
 ---
 
-[0.5.4] - 2026-04-13
+[0.5.3] - 2026-04-13
 
 Highlights
 
