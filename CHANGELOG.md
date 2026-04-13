@@ -4,6 +4,37 @@ All notable changes to this project will be documented in this file.
 
 ---
 
+## [0.5.4] - 2026-04-13
+
+### 🧠 Core (plugin)
+- Improved adjacent-channel duplicate detection (±0.1 MHz logic)
+- Quality-based station selection (PI / PS / RT / SNR)
+- Enhanced pending + settle logging system for more stable DX logs
+- Improved force-log behavior before frequency changes
+
+### 📊 Logging
+- Added new JSON fields:
+  - `adjacentDuplicate`
+  - `adjacentReason`
+- Improved consistency between TXT / CSV / JSON outputs
+- Better handling of weak / partial RDS data
+
+### ⚙️ Architecture
+- Extracted settings into `FmArrowTuneSettings`
+- Cleaner separation between UI, logic and logging
+- Internal cleanup and improved maintainability
+
+### 🌐 Dashboard
+- Faster loading (lazy FMScan loading)
+- Improved FMScan matching logic
+- Better confidence scoring behavior
+- Improved frequency mismatch detection
+- Reduced initial load delay significantly
+
+### 🐛 Fixes
+- Fixed occasional logging inconsistencies during rapid scanning
+- Improved handling of unstable frequencies before logging
+
 [0.5.3] - 2026-04-13
 
 Highlights
