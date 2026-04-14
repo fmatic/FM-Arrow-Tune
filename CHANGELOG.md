@@ -4,6 +4,27 @@ All notable changes to this project will be documented in this file.
 
 ---
 
+## [0.5.5] - 2026-04-14
+
+### Added
+- First seen / Last seen tracking for stations
+- Hit count per PI across the session
+- Improved confidence scoring integration in UI
+
+### Changed
+- Refactored station aggregation logic
+- Unified adjacent detection handling across all views
+- Improved FMScan match selection logic
+
+### Fixed
+- Missing closing bracket in renderUniqueStations()
+- Broken rendering of unique station cards
+- Incorrect hit counts when adjacent filtering enabled
+- Occasional UI inconsistencies in Top stations
+
+### Notes
+- Stable release after extended real-world FM-DX testing
+
 ## [0.5.4] - 2026-04-13
 
 ### 🧠 Core (plugin)
