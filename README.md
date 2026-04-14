@@ -33,6 +33,10 @@ Experience the dashboard in action:
 - daily log folders
 - invalid PI filtering
 - station settle time (prevents early false RDS logging)
+- 📊 Station tracking (first seen / last seen / hits)
+- 🚫 Intelligent adjacent-channel filtering
+- 🧠 Confidence scoring system
+- 🌍 FMScan integration (frequency + distance matching)
 
 ### 🧠 Intelligent detection
 - adjacent-channel duplicate detection (±0.1 MHz)
@@ -182,6 +186,12 @@ scan → detect → validate → log → analyze
 ---
 
 ## 📦 Release
+
+## 🚀 Latest release: v0.5.5
+
+Stable release with major improvements to station tracking and adjacent channel handling.
+
+👉 See full changelog in CHANGELOG.md
 
 🚀 Version 0.5.4 highlights
 
