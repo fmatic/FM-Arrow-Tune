@@ -1,4 +1,4 @@
-# FM Arrow Tune (DX Data Tool
+# FM Arrow Tune (DX Data Tool)
 ⚡ Turns SDR# into a fast, DX-oriented FM scanning and analysis system.
 
 ![Release](https://img.shields.io/github/v/release/fmatic/FM-Arrow-Tune)
