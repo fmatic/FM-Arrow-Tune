@@ -1,114 +1,147 @@
-# 🚀 FM Arrow Tune
+# 🚀 FM Arrow Tune  
+### Real-time FM DX Monitoring Platform for SDR#
 
-**Real-time FM DX monitoring platform for SDR#**
-
-What started as simple arrow key tuning has evolved into a **full live DX dashboard system**.
-
----
-
-## 🔥 Features
-
-- ⬅️➡️ Arrow key tuning (fast scanning)
-- 📡 Real-time DX logging
-- 🌐 Live dashboard (browser-based)
-- ⚡ One-click Launcher (no setup needed)
-- 🛰️ FMScan integration (country, distance, scoring)
-- 🧠 DX event detection (bursts, openings)
-- 🟢 System tray live monitor
-- 🌍 Optional Remote Live mode (server / Raspberry Pi)
+> From simple arrow tuning → to a full live DX intelligence system
 
 ---
 
-## 🎯 Quick Start (2 minutes)
+## 📸 Live Dashboard
 
-1. Copy plugin to SDR# Plugins folder  
+👉 *(Add screenshot here — this is VERY important)*  
+
+Example:
+![FM Arrow Tune Dashboard](docs/screenshot.png)
+
+---
+
+## 🔥 What is this?
+
+FM Arrow Tune is no longer just a plugin.
+
+It’s a **complete FM DX monitoring ecosystem**:
+
+- 🎯 Fast arrow-key band scanning  
+- 📡 Real-time DX logging  
+- 🌐 Live dashboard in browser  
+- ⚡ One-click launcher (no setup)  
+- 🧠 DX intelligence (openings, bursts, scoring)  
+- 🌍 Station identification (FMScan)  
+
+---
+
+## ⚡ 2-Minute Setup
+
+1. Copy plugin → SDR# Plugins folder  
 2. Enable logging in plugin  
 3. Run:
 
 FmArrowTune-Launcher.exe
 
-👉 Dashboard opens automatically
+👉 Dashboard opens automatically  
+👉 Live DX starts immediately  
 
 ---
 
-## 🖥️ Modes
+## 🖥️ Operating Modes
 
-| Mode         | Description |
-|--------------|------------|
-| **Manual**   | Open dashboard manually |
-| **Local Live** | Recommended – uses Launcher |
-| **Remote Live** | Advanced – run on your own server |
+| Mode           | Description |
+|----------------|------------|
+| **Manual**     | Open dashboard manually |
+| **Local Live** | ✅ Recommended – plug & play |
+| **Remote Live**| Advanced – run on your own server |
 
 ---
 
 ### 🔁 Local Live vs Remote Live
 
-Local Live and Remote Live provide the **same dashboard functionality**.
+Both modes are **identical in functionality**.
 
-- Local Live → easiest, runs locally  
-- Remote Live → for advanced users (server / sharing)
+- **Local Live** → easiest, runs locally  
+- **Remote Live** → for advanced users (server / sharing)
 
-👉 No extra features in Remote Live  
-👉 Just different deployment
+👉 Remote Live does NOT add new features  
+👉 It only changes where the dashboard runs  
 
 ---
 
 ## 🌐 Live Demo
 
-https://vadelma.online/live/dashboard.html
+https://vadelma.online/live/dashboard.html  
 
 ---
 
 ## 📦 Download
 
-https://github.com/YOUR_REPO/releases/latest
+https://github.com/YOUR_REPO/releases/latest  
 
 ---
 
-## 📊 FMScan Support
+## 📊 FMScan Integration
 
-Enhances dashboard with:
+Enhances DX experience with:
 
 - 🌍 Country detection  
 - 📏 Distance calculation  
-- 🎯 Better DX scoring  
+- 🎯 Smarter DX scoring  
 
-Requires manual download from FMList (see START_HERE.txt)
-
----
-
-## 🧠 DX Intelligence
-
-- Band opening detection
-- DX burst detection
-- Adjacent filtering
-- Confidence scoring
+⚠️ Requires manual download from FMList  
+(see START_HERE.txt)
 
 ---
 
-## 🛠️ Advanced
+## 🧠 DX Intelligence Engine
 
-- Remote Live (server mode)
-- Raspberry Pi setups
-- Custom FMScan lists
-- Full DX session analysis
+Built-in analysis includes:
+
+- 📈 Band opening detection  
+- 🔥 DX burst detection  
+- 🚫 Adjacent signal filtering  
+- 🎯 Confidence scoring  
+
+---
+
+## 🛰️ Built for DXers
+
+Works perfectly with:
+
+- SDR#  
+- TEF6686 setups  
+- AirSpy / RTL-SDR  
+- FM-DX-Webserver workflows  
+
+---
+
+## 🛠️ Advanced Use
+
+- 🌍 Remote Live (server / Raspberry Pi)
+- 📡 Multi-device monitoring
+- 📊 Session analysis
+- 🔧 Custom FMScan lists
 
 ---
 
 ## ❤️ Credits
 
-Special thanks to:
+Huge thanks to:
 
-- Paolo – feedback and ideas
-- FMList / FMScan community
-- SDR / DX community
+- Paolo Romani (IZ1MLL) – feedback & ideas  
+- FMList / FMScan community  
+- SDR / DX community  
 
 ---
 
 ## 🔮 Roadmap
 
-- 🗺️ Map view (DX paths)
-- 📡 Distance visualization
-- 📈 Session analytics
+- 🗺️ DX map view (paths & bearings)  
+- 📡 Distance visualization  
+- 📈 Session analytics  
 
 ---
+
+## ⭐ If you like this project
+
+Give it a star — it helps a lot 🙏  
+
+---
+
+73 and good DX!
