@@ -7,8 +7,6 @@
 
 ## 📸 Live Dashboard
 
-👉 *(Add screenshot here — this is VERY important)*  
-
 Example:
 ![FM Arrow Tune Dashboard](docs/screenshot.png)
 
