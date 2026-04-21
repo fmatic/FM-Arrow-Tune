@@ -14,6 +14,8 @@
 
 ![FM Arrow Tune Dashboard](docs/dashboard.png)
 
+Live example: https://vadelma.online/live/dashboard.html
+
 ---
 
 ## 🔥 What is this?
@@ -41,6 +43,7 @@ FmArrowTune-Launcher.exe
 
 👉 Dashboard opens automatically  
 👉 Live DX starts immediately  
+👉 Works without Python, Node or any dependencies
 
 ---
 
