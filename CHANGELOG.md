@@ -1,217 +1,248 @@
-# Changelog
+Changelog
 
 All notable changes to this project will be documented in this file.
 
----
+⸻
 
-## [0.5.5] - 2026-04-14
+[0.5.6] - 2026-04-21
 
-### Added
-- First seen / Last seen tracking for stations
-- Hit count per PI across the session
-- Improved confidence scoring integration in UI
+🚀 Major Release – Live DX Platform
 
-### Changed
-- Refactored station aggregation logic
-- Unified adjacent detection handling across all views
-- Improved FMScan match selection logic
+This version transforms FM Arrow Tune from a plugin into a complete real-time DX monitoring system.
 
-### Fixed
-- Missing closing bracket in renderUniqueStations()
-- Broken rendering of unique station cards
-- Incorrect hit counts when adjacent filtering enabled
-- Occasional UI inconsistencies in Top stations
+⸻
 
-### Notes
-- Stable release after extended real-world FM-DX testing
+🟢 Added – Launcher
 
-## [0.5.4] - 2026-04-13
+* One-click Local Live mode
+* Built-in lightweight web server
+* Automatic log synchronization
+* System tray integration:
+    * Left click → open dashboard
+    * Right click → menu
+* Live status indicator:
+    * 🟢 Live
+    * 🟡 Partial
+    * 🔴 Waiting / error
+* Config persistence (launcher-config.json)
 
-### 🧠 Core (plugin)
-- Improved adjacent-channel duplicate detection (±0.1 MHz logic)
-- Quality-based station selection (PI / PS / RT / SNR)
-- Enhanced pending + settle logging system for more stable DX logs
-- Improved force-log behavior before frequency changes
+⸻
 
-### 📊 Logging
-- Added new JSON fields:
-  - `adjacentDuplicate`
-  - `adjacentReason`
-- Improved consistency between TXT / CSV / JSON outputs
-- Better handling of weak / partial RDS data
+🌐 Added – Live Dashboard System
 
-### ⚙️ Architecture
-- Extracted settings into `FmArrowTuneSettings`
-- Cleaner separation between UI, logic and logging
-- Internal cleanup and improved maintainability
+* Real-time DX monitoring in browser
+* Event banner system
+* Improved rendering performance
+* Multiple operating modes:
+    * Manual
+    * Local Live (Launcher)
+    * Remote Live (server)
 
-### 🌐 Dashboard
-- Faster loading (lazy FMScan loading)
-- Improved FMScan matching logic
-- Better confidence scoring behavior
-- Improved frequency mismatch detection
-- Reduced initial load delay significantly
+⸻
 
-### 🐛 Fixes
-- Fixed occasional logging inconsistencies during rapid scanning
-- Improved handling of unstable frequencies before logging
+🧠 Added – DX Intelligence
+
+* Band opening detection with scoring
+* Opening trend indicator (↑ ↓ →)
+* 10-minute activity timeline (sparkline)
+* DX burst detection (rapid activity spikes)
+* Improved event prioritization logic
+
+⸻
+
+📡 Improved – FMScan Integration
+
+* Better match selection logic
+* Distance-based prioritization
+* Improved mismatch detection
+* Clearer UI presentation
+
+⸻
+
+⚙️ UX Improvements
+
+* Full START_HERE.txt onboarding guide
+* Simplified setup for non-technical users
+* Clear separation between Local Live and Remote Live
+* Improved dashboard clarity and feedback
+
+⸻
+
+🌍 Remote Live
+
+* Dashboard can be hosted on:
+    * Raspberry Pi
+    * NAS
+    * VPS
+* Same functionality as Local Live
+* Intended for advanced users and shared setups
+
+⸻
+
+⚠️ Notes
+
+* FMScan files must be downloaded manually (FMList policy)
+* Launcher does not require Python or external dependencies
+* Remote Live does not add new features (deployment only)
+
+⸻
+
+[0.5.5] - 2026-04-14
+
+Added
+
+* First seen / Last seen tracking for stations
+* Hit count per PI across the session
+* Improved confidence scoring integration in UI
+
+Changed
+
+* Refactored station aggregation logic
+* Unified adjacent detection handling across all views
+* Improved FMScan match selection logic
+
+Fixed
+
+* Missing closing bracket in renderUniqueStations()
+* Broken rendering of unique station cards
+* Incorrect hit counts when adjacent filtering enabled
+* Occasional UI inconsistencies in Top stations
+
+Notes
+
+* Stable release after extended real-world FM-DX testing
+
+⸻
+
+[0.5.4] - 2026-04-13
+
+🧠 Core (plugin)
+
+* Improved adjacent-channel duplicate detection (±0.1 MHz logic)
+* Quality-based station selection (PI / PS / RT / SNR)
+* Enhanced pending + settle logging system
+* Improved force-log behavior before frequency changes
+
+📊 Logging
+
+* Added new JSON fields:
+    * adjacentDuplicate
+    * adjacentReason
+* Improved consistency between TXT / CSV / JSON outputs
+* Better handling of weak / partial RDS data
+
+⚙️ Architecture
+
+* Extracted settings into FmArrowTuneSettings
+* Cleaner separation between UI, logic and logging
+* Internal cleanup and improved maintainability
+
+🌐 Dashboard
+
+* Faster loading (lazy FMScan loading)
+* Improved FMScan matching logic
+* Better confidence scoring behavior
+* Improved frequency mismatch detection
+* Reduced initial load delay significantly
+
+🐛 Fixes
+
+* Fixed occasional logging inconsistencies during rapid scanning
+* Improved handling of unstable frequencies before logging
+
+⸻
 
 [0.5.3] - 2026-04-13
 
 Highlights
 
-- Improved station logging
-- Smarter PI/PS/RT stabilization before logging
-- Better duplicate filtering
-- Cleaner log output overall
-- Adjacent channel detection
-- Detects 100 kHz offset duplicates
-- Marks them with ADJ
-- Keeps correct frequency as primary
-- Dashboard upgrades
-- New confidence scoring system
-- DX event detection
--  Improved FMScan lookup logic
--  Better UI clarity and station grouping
+* Improved station logging
+* Smarter PI/PS/RT stabilization before logging
+* Better duplicate filtering
+* Adjacent channel detection (100 kHz offset)
+* Dashboard upgrades:
+    * Confidence scoring
+    * DX event detection
+    * Improved FMScan lookup logic
+    * Better UI clarity and grouping
 
-- Standalone dashboard (NEW)
-- Works without Python or server
-- Load JSON + CSV files manually
-- Perfect for tablets and lightweight setups
+Standalone dashboard (NEW)
 
-Dashboard modes:
+* Works without Python or server
+* Manual JSON + CSV loading
+* Ideal for lightweight setups and tablets
 
-1. Server mode
-
-python -m http.server 8000
-
-2. Standalone mode
-- Open dashboard.html
-- Load log files manually
+⸻
 
 [0.5.2] - 2026-04-11
 
-### Added
-- Optional `dashboard-config.json` for user location
-- Support for user-defined coordinates in dashboard
-- Nearest TX selection for FMScan matches sharing the same PI code
+Added
 
-### Improved
-- Dashboard now prefers the closest transmitter when location is configured
-- Better handling of multi-transmitter network stations
-- More accurate and user-friendly FMScan station display
+* Optional dashboard-config.json for user location
+* Support for user-defined coordinates
+* Nearest TX selection for FMScan matches
 
-### Notes
-- Dashboard location config is optional
-- If no location config is present, dashboard falls back to the first FMScan match
+Improved
 
-## [0.5.1] - 2026-04-10 - HotFix
+* Better handling of multi-transmitter networks
+* More accurate FMScan display
 
-### 🛠 Fixed
-- Fixed frequency offset logging issue where stations were logged at incorrect frequencies (+0.1 MHz)
-- Fixed delayed logging behavior caused by pending queue committing after frequency change
-- Ensured station is logged BEFORE frequency step during scan
+⸻
 
-### ⚡ Improved
-- Logging accuracy significantly improved during fast scanning
-- Pending queue now works reliably without mixing station/frequency data
-- More deterministic DX logging behavior
+[0.5.1] - 2026-04-10
 
-### 🧪 Notes
-- This is a hotfix release for 0.5.0
-- Recommended update for all users using auto scan or keyboard tuning
+Fixed
 
-### [0.5.1] - 2026-04-10
+* Frequency offset logging issue (+0.1 MHz)
+* Delayed logging caused by pending queue
+* Ensured logging BEFORE frequency step
 
-#### Fixed
-- Prevented frequency/PI mismatch during scanning
-- Improved logging stability when switching frequencies
-- Added frequency stability validation before committing log entries
+Improved
 
-#### Improved
-- More reliable DX logging during fast scan conditions
+* Logging accuracy during fast scanning
+* More deterministic DX logging
 
-## [0.5.0] - 2026-04-10
+⸻
 
-### 🚀 Added
+[0.5.0] - 2026-04-10
 
-- Live dashboard support (optional)
-  - real-time log viewer
-  - last station panel
-  - unique PI listing
-  - best DX / top stations views
-- Confidence score system
-  - PI, PS, RT and SNR based scoring
-  - classification: high / medium / low confidence
-- DX event detection
-  - highlights new or strong DX events
-- FMScan / FMLIST CSV lookup (optional)
-  - manual user-provided data only
-  - propagation modes: Tropo / Sporadic E / Meteor Scatter
-  - auto mode fallback order: Tropo → ES → MS
-- Station settle time (pre-log validation)
-  - prevents false early RDS detections
-- Extended logging data
-  - SNR
-  - Peak level
-  - Noise floor
-  - Stereo / Mono
+🚀 Added
 
----
+* Live dashboard (optional)
+* Confidence scoring system
+* DX event detection
+* FMScan CSV lookup (manual)
+* Station settle time validation
+* Extended logging:
+    * SNR
+    * Peak
+    * Noise floor
+    * Stereo
 
-### 🔧 Improved
+⚠️ Notes
 
-- Logging reliability significantly improved
-  - reduced false PI entries
-  - better RDS stabilization handling
-- UI clarity in plugin panel
-  - improved labels and descriptions
-  - added help box with shortcuts
-- Dashboard rendering and layout
-  - responsive grid
-  - improved readability for long RT text
-- FMScan matching logic
-  - suppression of invalid / suspicious PI codes
-  - smarter matching prioritization
+* Dashboard optional
+* FMScan not bundled (manual download required)
 
----
+⸻
 
-### 🛠 Fixed
+[0.4.0]
 
-- early incorrect PI logging (e.g. 0001 / 0100 cases)
-- dashboard rendering issues on certain layouts
-- numeric control alignment glitches in plugin UI
-- scan control inconsistencies
+* Initial logging system
+* PI-based logging
+* Basic auto scan
 
----
+⸻
 
-### ⚠️ Notes
+[0.3.0]
 
-- Dashboard is fully optional and not required for plugin operation
-- FMScan data is not bundled due to licensing restrictions
-- Users must download FMScan CSV files manually
-- FMScan data is used for enrichment only, not as authoritative source
+* Arrow key tuning
+* Basic plugin functionality
 
----
+⸻
 
-## [0.4.0]
+[0.1.0]
 
-### Added
-- Initial logging system
-- PI-based logging
-- basic auto scan
-
----
-
-## [0.3.0]
-
-### Added
-- Arrow key tuning
-- basic plugin functionality
-
----
-
-## [0.1.0]
-
-### Initial release
-- Simple keyboard tuning helper
+* Initial release
+* Simple keyboard tuning helper
+    
