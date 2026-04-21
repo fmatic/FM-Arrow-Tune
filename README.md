@@ -5,9 +5,14 @@
 
 ---
 
-## 📸 PLugin
+## 📸 Plugin
 
 ![FM Arrow Tune](docs/screenshot.png)
+
+
+## 📸 Dashboard
+
+![FM Arrow Tune Dashboard](docs/dashboard.png)
 
 ---
 
