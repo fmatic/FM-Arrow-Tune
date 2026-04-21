@@ -1,5 +1,5 @@
 # 🚀 FM Arrow Tune  
-### Real-time FM DX Monitoring Platform for SDR#
+### Real-time FM DX Monitoring Platform for SDR# 👉 One-click live FM DX dashboard for SDR#
 
 > From simple arrow tuning → to a full live DX intelligence system
 
