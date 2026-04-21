@@ -1,266 +1,114 @@
-# FM Arrow Tune – SDR# plugin with DX analytics, dashboard & live monitoring
-⚡ Turns SDR# into a fast, DX-oriented FM scanning and analysis system.
+# 🚀 FM Arrow Tune
 
-![Release](https://img.shields.io/github/v/release/fmatic/FM-Arrow-Tune)
+**Real-time FM DX monitoring platform for SDR#**
 
-SDR# plugin for FM DX logging, signal analysis and real-time monitoring — now with optional live dashboard support.
-
----
-
-## 📸 Screenshot
-
-![FM Arrow Tune Dashboard](docs/screenshot.png)
-
----
-🌐 **Live Demo**  
-Experience the dashboard in action:  
-👉 https://vadelma.online/live/dashboard.html
-
-> ⚠️ Live demo uses real-time data — content may change continuously.
-
-## 🚀 Features
-
-- keyboard-driven FM tuning and scanning
-- hold-to-scan and auto scan
-- PI-first logging
-- optional Radiotext capture
-- signal metrics:
-  - SNR
-  - Peak
-  - Noise Floor
-  - Stereo / Mono
-- TXT / CSV / JSON logging
-- daily log folders
-- invalid PI filtering
-- station settle time (prevents early false RDS logging)
-- 📊 Station tracking (first seen / last seen / hits)
-- 🚫 Intelligent adjacent-channel filtering
-- 🧠 Confidence scoring system
-- 🌍 FMScan integration (frequency + distance matching)
-
-### 🧠 Intelligent detection
-- adjacent-channel duplicate detection (±0.1 MHz)
-- quality-based station selection (PI / PS / RT / SNR)
-- pending + settle logging system
-- force-log before frequency change
-
-### 🌐 Dashboard
-- optional live dashboard
-- optional FMScan / FMLIST enrichment
-- confidence score
-- DX event detection
-- improved loading performance (lazy FMScan loading)
-
-👉 This is no longer just a tuning helper — it's a compact DX analysis tool.
+What started as simple arrow key tuning has evolved into a **full live DX dashboard system**.
 
 ---
 
-## ⚡ Quick Start
+## 🔥 Features
 
-1. Download the latest release  
-2. Extract ZIP  
-3. Copy plugin into SDR# Plugins folder  
-4. Start SDR#  
-5. Enable **FM Arrow Tune**
-
-Optional:
-
-6. Open `dashboard.html` to view logs visually
-7. Dashboard requires HTTP server
+- ⬅️➡️ Arrow key tuning (fast scanning)
+- 📡 Real-time DX logging
+- 🌐 Live dashboard (browser-based)
+- ⚡ One-click Launcher (no setup needed)
+- 🛰️ FMScan integration (country, distance, scoring)
+- 🧠 DX event detection (bursts, openings)
+- 🟢 System tray live monitor
+- 🌍 Optional Remote Live mode (server / Raspberry Pi)
 
 ---
 
-## ⌨️ Keyboard Shortcuts
+## 🎯 Quick Start (2 minutes)
 
-- Left / Right = step tuning  
-- Up / Down = jump tuning  
-- Hold arrow = continuous scan  
-- F8 = auto scan up  
-- F7 = auto scan down  
-- Esc = stop scanning  
+1. Copy plugin to SDR# Plugins folder  
+2. Enable logging in plugin  
+3. Run:
 
----
+FmArrowTune-Launcher.exe
 
-## 📊 Dashboard (optional)
-
-Starting with **v0.5.0**, FM Arrow Tune includes a live dashboard.
-
-### Features
-
-- Last Station panel
-- daily log viewer
-- unique PI list
-- Best DX today
-- Top stations
-- confidence score
-- DX event banner
-- FMScan lookup (optional)
-
-👉 The dashboard is **fully optional**  
-👉 The plugin works normally without it
+👉 Dashboard opens automatically
 
 ---
 
-## 📁 Folder Structure
+## 🖥️ Modes
 
-```text
-live/
-  dashboard.html
-  FMArrowTune_latest.json
-  index.json
-  2026-04-10/
-    FMArrowTune.json
-```
-
-📡 FMScan / FMLIST Support (optional)
-
-No station database is bundled.
-
-Users can manually download CSV files from FMScan:
-	•	https://fmscan.org/
-
-Place them here:
-
-``` text
-live/
-  fmscan/
-    fmscan-tropo.csv
-    fmscan-es.csv
-    fmscan-ms.csv
-```
-
-Lookup priority (Auto mode)
-- Tropo
-- Sporadic E
-- Meteor Scatter
-
-👉 FMScan data is used as enrichment only, not as absolute truth.
-
-## Optional dashboard location config
-
-The dashboard can optionally use a small JSON config file to improve FMScan matching.
-When multiple FMScan entries share the same PI code, the dashboard can prefer the **nearest transmitter** based on user-defined coordinates.
-If no config file is present, the dashboard falls back to the first available FMScan match.
-
-### File
-Create this file next to `dashboard.html`:
-
-```text
-dashboard-config.json
-
-{
-  "userLocation": {
-    "name": "Jyväskylä",
-    "lat": 62.2426,
-    "lon": 25.7473
-  }
-}
-```
-
-Behavior
-	•	If coordinates are configured:
-	•	dashboard selects the nearest matching TX site
-	•	If no coordinates are configured:
-	•	dashboard uses the default FMScan fallback match
-
-This is especially useful for stations and networks where the same PI code is used by multiple transmitters.
-
-⸻
-
-⚙️ Recommended Defaults
- - Scan speed: 120 ms
- - Auto dwell: 1200 ms
- - Station settle time: 1000 ms
-
-⸻
-
-🧠 How it evolved
-
-Originally built for simple keyboard tuning (especially for remote SDR use via iPad + Splashtop),
-FM Arrow Tune has grown into a full DX workflow tool:
-
-scan → detect → validate → log → analyze
-
-⸻
+| Mode         | Description |
+|--------------|------------|
+| **Manual**   | Open dashboard manually |
+| **Local Live** | Recommended – uses Launcher |
+| **Remote Live** | Advanced – run on your own server |
 
 ---
 
-## 📦 Release
+### 🔁 Local Live vs Remote Live
 
-## 🚀 Latest release: v0.5.5
+Local Live and Remote Live provide the **same dashboard functionality**.
 
-Stable release with major improvements to station tracking and adjacent channel handling.
+- Local Live → easiest, runs locally  
+- Remote Live → for advanced users (server / sharing)
 
-👉 See full changelog in CHANGELOG.md
-
-🚀 Version 0.5.4 highlights
-
-### 🧠 Core improvements
-- Adjacent-channel duplicate detection moved fully to plugin
-- Quality-based station selection (PI / PS / RT / SNR)
-- More accurate logging during fast scanning
-
-### 📊 Logging upgrades
-- New JSON fields:
-  - `adjacentDuplicate`
-  - `adjacentReason`
-- Improved signal metrics logging
-- Stable pending + settle logic
-
-### ⚙️ Refactoring
-- Settings moved to dedicated `FmArrowTuneSettings`
-- Cleaner separation of logic, UI and logging
-
-### 🌐 Dashboard improvements
-- Faster loading (lazy FMScan loading)
-- Improved station matching
-- Better confidence scoring
-- Frequency mismatch detection improvements
+👉 No extra features in Remote Live  
+👉 Just different deployment
 
 ---
 
-🆕 v0.5.3 – Previous release
+## 🌐 Live Demo
 
-- Adjacent channel detection (initial version)
-- Improved logging accuracy
-- Confidence scoring system
-- Standalone dashboard mode
+https://vadelma.online/live/dashboard.html
 
 ---
 
-🆕 v0.5.2 - 2026-04-11
+## 📦 Download
 
-### Added
-- Optional `dashboard-config.json` for user location
-- Support for user-defined coordinates in dashboard
-- Nearest TX selection for FMScan matches sharing the same PI code
-
-### Improved
-- Better handling of multi-transmitter stations
-- More accurate FMScan display
+https://github.com/YOUR_REPO/releases/latest
 
 ---
 
-🆕 v0.5.1 – Logging stability fix
+## 📊 FMScan Support
 
-- Fixed frequency / PI mismatch issue
-- Prevented RDS carry-over between frequencies
-- Added frequency stability validation
+Enhances dashboard with:
 
-➡️ Result: cleaner logs and more reliable DX data
+- 🌍 Country detection  
+- 📏 Distance calculation  
+- 🎯 Better DX scoring  
+
+Requires manual download from FMList (see START_HERE.txt)
 
 ---
 
-🆕 v0.5.0 – Major update
+## 🧠 DX Intelligence
 
-- 🔥 Live dashboard
-- 📊 Signal metrics logging
-- ⏱️ Station settle time
-- 🧠 Confidence scoring
-- 📡 DX event detection
-- 🌍 FMScan enrichment (optional)
-⸻
+- Band opening detection
+- DX burst detection
+- Adjacent filtering
+- Confidence scoring
 
-📜 License
+---
 
-MIT
+## 🛠️ Advanced
+
+- Remote Live (server mode)
+- Raspberry Pi setups
+- Custom FMScan lists
+- Full DX session analysis
+
+---
+
+## ❤️ Credits
+
+Special thanks to:
+
+- Paolo – feedback and ideas
+- FMList / FMScan community
+- SDR / DX community
+
+---
+
+## 🔮 Roadmap
+
+- 🗺️ Map view (DX paths)
+- 📡 Distance visualization
+- 📈 Session analytics
+
+---
