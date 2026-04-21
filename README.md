@@ -5,10 +5,9 @@
 
 ---
 
-## 📸 Live Dashboard
+## 📸 PLugin
 
-Example:
-![FM Arrow Tune Dashboard](docs/screenshot.png)
+![FM Arrow Tune](docs/screenshot.png)
 
 ---
 
