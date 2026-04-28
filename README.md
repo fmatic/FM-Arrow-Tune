@@ -18,54 +18,74 @@ Live example: https://vadelma.online/live/dashboard.html
 
 ---
 
-## 🔥 What is this?
+🔥 What is this?
 
-FM Arrow Tune is no longer just a plugin.
+FM Arrow Tune is an SDR# plugin and live dashboard system for FM DXers.
 
-It’s a **complete FM DX monitoring ecosystem**:
+It combines:
 
-- 🎯 Fast arrow-key band scanning  
-- 📡 Real-time DX logging  
-- 🌐 Live dashboard in browser  
-- ⚡ One-click launcher (no setup)  
-- 🧠 DX intelligence (openings, bursts, scoring)  
-- 🌍 Station identification (FMScan)  
+* fast keyboard tuning
+* real-time RDS logging
+* FMScan-assisted station identification
+* browser-based DX analytics
 
----
+⸻
 
-## ⚡ 2-Minute Setup
+✨ Highlights
 
-1. Copy plugin → SDR# Plugins folder  
-2. Enable logging in plugin  
+* 🎯 Arrow-key FM tuning for SDR#
+* 🔁 Continuous band scanning (wrap-around)
+* 📡 Real-time PI / PS / RT logging
+* 🟢 Activity indicator: Idle / Tuning / Scanning / Waiting / Logging
+* 🌐 Live dashboard in browser
+* ⚡ One-click launcher (Local Live mode)
+* 🧠 DX intelligence (openings, bursts, scoring)
+* 🚫 Adjacent-channel duplicate filtering
+* 🌍 FMScan integration
+
+⸻
+
+🆕 v0.5.7 – Stability & UI Update
+
+Added / Improved
+
+* Activity indicator in plugin panel
+* Refined plugin UI
+* PI stability filtering improvements
+* Safer default settings
+* Reset-to-defaults groundwork
+
+Fixed
+
+* Launcher Exit now closes correctly
+* Wrap-around tuning restored
+* UI settings now update correctly
+* Removed unstable settings persistence attempt
+* Fixed crash from System.Web.Extensions dependency
+
+👉 Settings persistence will return in v0.5.8 (dependency-free)
+
+⸻
+
+⚡ 2-Minute Setup
+
+1. Copy plugin → SDR# Plugins folder
+2. Enable logging
 3. Run:
 
 FmArrowTune-Launcher.exe
 
-👉 Dashboard opens automatically  
-👉 Live DX starts immediately  
-👉 Works without Python, Node or any dependencies
+✔ Dashboard opens automatically
+✔ Live DX starts immediately
+✔ No Python / Node / dependencies needed
 
----
+## 🖥️ Modes
 
-## 🖥️ Operating Modes
-
-| Mode           | Description |
-|----------------|------------|
-| **Manual**     | Open dashboard manually |
-| **Local Live** | ✅ Recommended – plug & play |
-| **Remote Live**| Advanced – run on your own server |
-
----
-
-### 🔁 Local Live vs Remote Live
-
-Both modes are **identical in functionality**.
-
-- **Local Live** → easiest, runs locally  
-- **Remote Live** → for advanced users (server / sharing)
-
-👉 Remote Live does NOT add new features  
-👉 It only changes where the dashboard runs  
+| Mode | Description |
+|------|-------------|
+| Manual | Open dashboard manually |
+| Local Live | ✅ Recommended |
+| Remote Live | Advanced |
 
 ---
 
@@ -77,53 +97,17 @@ https://vadelma.online/live/dashboard.html
 
 ## 📦 Download
 
-https://github.com/YOUR_REPO/releases/latest  
+https://github.com/fmatic/FM-Arrow-Tune/releases/latest  
 
 ---
 
-## 📊 FMScan Integration
+## 🧠 DX Intelligence
 
-Enhances DX experience with:
+- Band opening detection  
+- DX burst detection  
+- Confidence scoring  
+- Adjacent filtering  
 
-- 🌍 Country detection  
-- 📏 Distance calculation  
-- 🎯 Smarter DX scoring  
-
-⚠️ Requires manual download from FMList  
-(see START_HERE.txt)
-
----
-
-## 🧠 DX Intelligence Engine
-
-Built-in analysis includes:
-
-- 📈 Band opening detection  
-- 🔥 DX burst detection  
-- 🚫 Adjacent signal filtering  
-- 🎯 Confidence scoring  
-
----
-
-## 🛰️ Built for DXers
-
-Works perfectly with:
-
-- SDR#  
-- TEF6686 setups  
-- AirSpy / RTL-SDR  
-- FM-DX-Webserver workflows  
-
----
-
-## 🛠️ Advanced Use
-
-- 🌍 Remote Live (server / Raspberry Pi)
-- 📡 Multi-device monitoring
-- 📊 Session analysis
-- 🔧 Custom FMScan lists
-
----
 
 ## ❤️ Credits
 
@@ -137,11 +121,13 @@ Huge thanks to:
 
 ## 🔮 Roadmap
 
-- 🗺️ DX map view (paths & bearings)  
-- 📡 Distance visualization  
+- 💾 Safe settings persistence  
+- 🎚️ Scanning profiles  
+- 🗺️ DX map view  
 - 📈 Session analytics  
 
 ---
+
 
 ## ⭐ If you like this project
 
