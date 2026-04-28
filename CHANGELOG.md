@@ -2,6 +2,31 @@ Changelog
 
 All notable changes to this project will be documented in this file.
 
+[0.5.7] - 2026-04-28
+
+🛠️ Stability & UI Update
+
+Added / Improved
+
+* Activity indicator in plugin panel (Idle / Tuning / Scanning / Waiting / Logging)
+* Refined plugin panel UI
+* Improved PI stability filtering
+* Safer default settings
+* Reset-to-defaults groundwork for future version
+
+Fixed
+
+* Launcher Exit now closes correctly
+* Wrap-around tuning restored
+* UI settings update issues fixed after panel refactor
+* Removed unstable settings persistence attempt
+* Fixed crash caused by System.Web.Extensions dependency
+
+Notes
+
+* Settings persistence postponed to v0.5.8
+* Future implementation will be dependency-free and SDR# safe
+
 ⸻
 
 [0.5.6] - 2026-04-21
