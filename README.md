@@ -129,6 +129,7 @@ Huge thanks to:
 0.6.0 = Band opening detection + session stats + country tracking
 0.6.1 = Scan profiles / presets
 0.7.0 = Map view + DX paths + distance visuals
+
 ---
 
 
