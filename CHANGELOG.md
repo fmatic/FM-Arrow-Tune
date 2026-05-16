@@ -2,6 +2,18 @@ Changelog
 
 All notable changes to this project will be documented in this file.
 
+# [0.5.7.2] - 2026-05-16
+
+## Fixed
+- Fixed delayed/stale RDS logging causing stations to appear on incorrect frequencies
+- Added delayed post-tune logging scheduler for more reliable PI/PS detection
+- Improved frequency settle handling during manual and auto scanning
+- Reduced adjacent-channel false positives caused by stale RDS data
+
+## Improved
+- More stable FM-DX logging behavior during fast band scanning
+- Better real-world accuracy for crowded FM band conditions
+
 [0.5.7] - 2026-04-28
 
 🛠️ Stability & UI Update
